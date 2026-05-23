@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>data </title>
+</head>
+
+<body>
+    <form method="get">
+        <fieldset>
+            <legend>data user</legend>
+            <label for="f-name">first-name</label>
+            <input type="text" id="f-name" name="first-name" required placeholder="enter firstname">
+            <label for="l-name">last-name</label>
+            <input type="text" id="l-name" name="last-name-name" required placeholder="enter lastname">
+            <p><label for="sex">sex</label></p>
+            <p><input type="radio" id="M" name="sex" value="Male">
+                <label for="M">Male</label>
+            </p>
+            <p><input type="radio" id="F" name="sex" value="Female" required>
+                <label for="F">Female</label>
+            </p>
+            <p><label for="date">Birth Date</label>
+                <input type="date" name="Birth Date" id="date" required min="2000-01-01" max="2009-12-31"
+                    value="2000-01-01">
+            </p>
+            <p>
+                <label for="age">Age</label>
+                <input type="number" name="Age" id="age" min="16" max="26" value="16" required>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Account data</legend>
+            <p><label for="Em">Email</label>
+                <input type="email" name="Email" id="Em" required placeholder="enter the email">
+
+                <label for="pass">Password</label>
+                <input type="password" name="password" id="pass" minlength="8" maxlength="20" required
+                    placeholder="enter the password">
+            </p>
+            <p>
+                <label for="city">city</label>
+                <select name="city" id="city">
+                    <option value="Gaza">Gaza</option>
+                    <option value="Kanyones">Kanyones</option>
+                    <option value="Rafah">Rafah</option>
+                    <option value="Daer">Daer</option>
+                </select>
+            </p>
+            <p>
+                <label for="tel">Number Phone</label>
+                <input type="tel" name="number Phone" id="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    placeholder="xxx-xxx-xxxx">
+            </p>
+        </fieldset>
+    </form>
+</body>
+
+</html>
