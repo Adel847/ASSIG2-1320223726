@@ -11,7 +11,7 @@
         <fieldset>
             <legend>data user</legend>
             <label for="f-name">first-name</label>
-            <input type="text" id="f-name" name="first-name" required placeholder="enter firstname">
+            <input type="text" id="f-name" name="first-name" required placeholder="enter firstname" autofocus>
             <label for="l-name">last-name</label>
             <input type="text" id="l-name" name="last-name-name" required placeholder="enter lastname">
             <p><label for="sex">sex</label></p>
@@ -54,6 +54,43 @@
                     placeholder="xxx-xxx-xxxx">
             </p>
         </fieldset>
+        <fieldset>
+            <legend>skills user</legend>
+            <p><label>languges:</label>
+            <p><input type="checkbox" name="languges" id="en" value="English">
+                <label for="en">English</label>
+            </p>
+            <p><input type="checkbox" name="languges" id="ar" value="Arabic">
+                <label for="ar">Arabic</label>
+            </p>
+            <p><input type="checkbox" name="languges" id="fr" value="Fransh">
+                <label for="fr">Fransh</label>
+            </p>
+            </p>
+            <p>
+                <label for="level">Level of English language proficiency</label>
+                <input type="range" name="English language proficiency" id="level" min="10" max="100" step="10"
+                    value="50">
+            </p>
+            <p>
+                <label>Hobbies: </label>
+            <p><input type="checkbox" name="hobby" id="f" value="football" checked>
+                <label for="f">football</label>
+            </p>
+            <p><input type="checkbox" name="hobby" id="r" value="reading">
+                <label for="r">reading</label>
+            </p>
+            <p><input type="checkbox" name="hobby" id="g" value="gamming">
+                <label for="g">gamming</label>
+            </p>
+            <p><input type="checkbox" name="hobby" id="s" value="Swimming">
+                <label for="s">Swimming</label>
+            </p>
+            </p>
+        </fieldset>
+        <button type="submit">send</button>
+        <button type="reset">reset</button>
+
     </form>
 </body>
 
